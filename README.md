@@ -13,3 +13,5 @@ DB_USERNAME => Usuário do banco de dados.
 DB_PASSWORD => Senha do usuário do banco de dados.
 
 DB_HOST => Endereço do banco de dados.
+
+![image](https://user-images.githubusercontent.com/98129908/214576816-4a68ebb1-c2bb-41c8-a309-792fb88a4b58.png)
