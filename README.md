@@ -17,3 +17,5 @@ DB_HOST => Endereço do banco de dados.
 ![image](https://user-images.githubusercontent.com/98129908/214576816-4a68ebb1-c2bb-41c8-a309-792fb88a4b58.png)
 
 ![image](https://user-images.githubusercontent.com/98129908/231287810-ede6155d-7aab-4caf-af40-08281644d3ae.png)
+
+![image](https://user-images.githubusercontent.com/98129908/231289903-78ea5e30-70e5-4731-80c0-92a4f89967b1.png)
