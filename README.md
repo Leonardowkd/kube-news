@@ -14,7 +14,24 @@ DB_PASSWORD => Senha do usuário do banco de dados.
 
 DB_HOST => Endereço do banco de dados.
 
-![image](https://user-images.githubusercontent.com/98129908/214576816-4a68ebb1-c2bb-41c8-a309-792fb88a4b58.png)
+k3d cluster create - Comando para criação basica 
+kubectl get pods
+kubectl get nodes
+kubectl describe pod meupod
+kubectl port-forward pod/meupod 8080:80
+kubectl get pods -l cor=verde
+kubectl delete -f ./pod.yaml
+kubectl apply -f ./replicaset.yaml
+kubectl get replicaset
+kubectl describe replicaset meureplicaset
+kubectl delete pod meureplicaset-8s74g
+kubectl apply -f ./deployment.yaml
+kubectl get deployment 
+kubectl rollout undo deployment meudeployment
+kubectl get svc
+k3d cluster list
+k3d cluster create newcluster -p "80:30000@loadbalancer"
+kubectl expose deployment/web --port 80
 
 ![image](https://user-images.githubusercontent.com/98129908/231287810-ede6155d-7aab-4caf-af40-08281644d3ae.png)
 
