@@ -17,3 +17,7 @@ variable "do_token" {}
 provider "digitalocean" {
   token = var.do_token
 }
+
+
+
+dop_v1_ce37d2372637911f935bd4f7d24133d98004e808f7d8673d9a606ef5553573ef
