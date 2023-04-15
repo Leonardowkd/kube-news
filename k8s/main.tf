@@ -13,5 +13,5 @@ variable "do_token" {}
 
 # Configure the DigitalOcean Provider
 provider "digitalocean" {
-  token = "dop_v1_068639f1969b8acc8cfe0a364d97acb4734ffe71df8d2c6f147abf78be9076fd"
+  token = "dop_v1_69476466e0970a2fcf0b77a5339a0764b9daf3b1bb6daf2198b8c79012b1eec1"
 }

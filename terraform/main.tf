@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "digitalocean" {
-  token = "dop_v1_2964b98a13621eaadef5deafbbe5a398d9b31d96c7bc099e4a8f730e721f1c9b"
+  token = "dop_v1_95222b6cfea391b4c41f6fa1f13ac14023ca7825b0965f503424a666122a47c2"
 }
 
 resource "digitalocean_droplet" "jenkins-vm" {
@@ -31,7 +31,7 @@ resource "digitalocean_kubernetes_cluster" "k8s" {
   node_pool {
     name       = "k8s-pool"
     size       = "s-2vcpu-2gb"
-    node_count = 1
+    node_count = 2
   }
 }
 
@@ -48,10 +48,10 @@ variable "region" {
 }
 
 output "jenkins-ip" {
-    value = digitalocean_droplet.jenkins-vm.ipv4_address
+  value = digitalocean_droplet.jenkins-vm.ipv4_address
 }
 
-resource "local_file" "foo" {
+resource "local_file" "kube-config" {
   content  = digitalocean_kubernetes_cluster.k8s.kube_config.0.raw_config
   filename = "kube_config.yaml"
 }
