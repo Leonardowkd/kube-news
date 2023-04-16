@@ -1,3 +1,3 @@
-do_token     = "dop_v1_62d8749602ef155ed7aa4df1e1faf5264939742e2f992b6719b83a0df92eaa6a"
+do_token     = "dop_v1_6a39de5f3e36650f575ccbfd0c28e42d15169ac2acd94383410180c4ef298a10"
 ssh_key_name = "projeto"
 region       = "nyc1"
