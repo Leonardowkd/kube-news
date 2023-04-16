@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage ('Build Image') {
+        stage('Build Image') {
             steps {
                 script {
                     dockerapp = docker.build("suprem3/kube-news:${env.BUILD_ID}", '-f ./src/Dockerfile ./src') 
@@ -10,7 +10,7 @@ pipeline {
             }
         }
 
-        stage ('Push Image') {
+        stage('Push Image') {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
@@ -25,8 +25,7 @@ pipeline {
             steps {
                 withKubeConfig([credentialsId: 'kubeconfig']) {
                     sh 'kubectl apply -f ./k8s/deployment.yaml'  
-                }
-        
+                }        
             }
         }
     }
