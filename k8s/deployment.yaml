@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: suprem3/kube-news:v1
+        image: suprem3/kube-news:{{TAG}}
         env:
         - name: DB_DATABASE
           value: "kubenews"
