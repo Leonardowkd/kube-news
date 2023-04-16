@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "digitalocean" {
-  token = "dop_v1_143449914a409ffba722b315852bb8fab9b36619e309e8acdbfe431402e2f628"
+  token = var.do_token
 }
 
 resource "digitalocean_droplet" "jenkins-vm" {
